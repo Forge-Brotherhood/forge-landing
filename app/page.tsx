@@ -8,6 +8,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
+import { EmailSignup } from "@/components/EmailSignup";
 
 export default function LandingPage() {
   return (
@@ -60,32 +61,11 @@ export default function LandingPage() {
               <div className="absolute inset-0 bg-gradient-to-r from-amber-500/20 via-red-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-30"></div>
               <Card className="relative bg-zinc-950/90 border border-zinc-800/60 backdrop-blur-xl shadow-2xl shadow-amber-500/10 rounded-3xl overflow-hidden">
                 <CardContent className="p-6 sm:p-8 md:p-10">
-                  <form
-                    className="flex flex-col sm:flex-row gap-3"
-                    onSubmit={(e) => {
-                      e.preventDefault();
-                      const data = new FormData(e.currentTarget as HTMLFormElement);
-                      const email = data.get("email");
-                      alert(`Thanks! We'll be in touch at ${email}.`);
-                    }}
-                  >
-                    <div className="flex-1 relative">
-                      <Input
-                        name="email"
-                        type="email"
-                        required
-                        placeholder="Enter your email address"
-                        className="h-12 sm:h-14 bg-zinc-900/60 border-zinc-700/60 text-white placeholder:text-zinc-500 focus:border-amber-500 focus:ring-1 focus:ring-amber-500/20 transition-all duration-300 text-sm sm:text-base px-4 sm:px-5 rounded-xl backdrop-blur-sm"
-                      />
-                    </div>
-                    <Button
-                      type="submit"
-                      className="h-12 sm:h-14 px-6 sm:px-8 font-semibold bg-gradient-to-r from-amber-500 to-amber-400 text-black hover:from-amber-400 hover:to-amber-300 shadow-xl shadow-amber-500/30 hover:shadow-amber-500/40 transition-all duration-300 rounded-xl flex items-center justify-center gap-2 sm:gap-3 text-sm sm:text-base whitespace-nowrap"
-                    >
-                      Join
-                      <ArrowRight className="h-5 w-5" />
-                    </Button>
-                  </form>
+                  <EmailSignup 
+                    placeholder="Enter your email address"
+                    buttonText="Join"
+                    className="w-full"
+                  />
                   <p className="mt-6 text-sm text-zinc-400 text-center font-medium">
                     No spam, no BS. Only an invite when we launch. 
                     <span className="text-amber-400/80 block mt-1">Be part of something real.</span>
@@ -159,28 +139,13 @@ export default function LandingPage() {
             <p className="text-zinc-400 mt-2 text-base sm:text-lg">Be among the first to join the brotherhood.</p>
           </div>
           <div className="w-full md:w-auto md:min-w-[400px]">
-            <form
-              className="flex flex-col sm:flex-row gap-3 p-4 rounded-2xl bg-zinc-950/60 border border-zinc-800/60 backdrop-blur-sm shadow-xl"
-              onSubmit={(e) => {
-                e.preventDefault();
-                const data = new FormData(e.currentTarget as HTMLFormElement);
-                const email = data.get("email-footer");
-                alert(`Thanks! We'll be in touch at ${email}.`);
-              }}
-            >
-              <div className="flex-1">
-                <Input
-                  name="email-footer"
-                  type="email"
-                  required
-                  placeholder="Your email address"
-                  className="h-12 bg-zinc-900/60 border-zinc-700/60 text-white placeholder:text-zinc-500 focus:border-amber-500 focus:ring-1 focus:ring-amber-500/20 transition-all duration-300 rounded-xl px-4"
-                />
-              </div>
-              <Button className="h-12 px-6 font-semibold bg-gradient-to-r from-amber-500 to-amber-400 text-black hover:from-amber-400 hover:to-amber-300 shadow-lg shadow-amber-500/25 hover:shadow-amber-500/35 transition-all duration-300 rounded-xl whitespace-nowrap">
-                Get Early Access
-              </Button>
-            </form>
+            <div className="p-4 rounded-2xl bg-zinc-950/60 border border-zinc-800/60 backdrop-blur-sm shadow-xl">
+              <EmailSignup 
+                placeholder="Your email address"
+                buttonText="Get Early Access"
+                className="w-full"
+              />
+            </div>
           </div>
         </div>
         <div className="mx-auto max-w-5xl px-4 sm:px-6 pb-8 sm:pb-10 text-xs text-zinc-500 text-center">

@@ -123,7 +123,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en">
+    <html lang="en" className="bg-[#0b0b0c]">
       <head>
         <script
           type="application/ld+json"
@@ -131,7 +131,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#0b0b0c] text-white min-h-screen`}
       >
         <GoogleAnalytics />
         {children}
