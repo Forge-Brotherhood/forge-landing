@@ -45,7 +45,7 @@ export default function ThankYouPage() {
             </h1>
             
             <p className="text-lg sm:text-xl text-zinc-300 max-w-2xl mx-auto">
-              You're in. We're building something real here, and you're part of it from the ground up.
+              You&apos;re in. We&apos;re building something real here, and you&apos;re part of it from the ground up.
             </p>
           </motion.div>
 
@@ -58,19 +58,19 @@ export default function ThankYouPage() {
           >
             <Card className="bg-zinc-950/70 border-zinc-800/80 backdrop-blur-sm">
               <CardContent className="p-6 sm:p-8">
-                <h2 className="text-xl sm:text-2xl font-semibold mb-6 text-white">Here's What Happens Next:</h2>
+                <h2 className="text-xl sm:text-2xl font-semibold mb-6 text-white">Here&apos;s What Happens Next:</h2>
                 
                 <div className="space-y-6">
                   <NextStep
                     icon={<Bell className="w-5 h-5" />}
                     title="Check Your Inbox"
-                    description="We just sent you a welcome email. Make sure to whitelist us so you don't miss updates."
+                    description="We just sent you a welcome email. Make sure to whitelist us so you don&apos;t miss updates."
                   />
                   
                   <NextStep
                     icon={<Users className="w-5 h-5" />}
                     title="Early Access Launch"
-                    description="You'll be among the first to know when we open the doors. We're launching with a small, committed group of founding members."
+                    description="You&apos;ll be among the first to know when we open the doors. We&apos;re launching with a small, committed group of founding members."
                   />
                   
                   <NextStep
@@ -91,7 +91,7 @@ export default function ThankYouPage() {
             className="text-center"
           >
             <p className="text-zinc-400 mb-6">
-              While you wait, dive deeper into what we're building:
+              While you wait, dive deeper into what we&apos;re building:
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -123,7 +123,7 @@ export default function ThankYouPage() {
           >
             <blockquote className="text-center">
               <p className="text-lg text-zinc-400 italic">
-                "As iron sharpens iron, so one man sharpens another."
+                &ldquo;As iron sharpens iron, so one man sharpens another.&rdquo;
               </p>
               <cite className="text-sm text-zinc-500 mt-2 block">— Proverbs 27:17</cite>
             </blockquote>

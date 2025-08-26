@@ -2,11 +2,8 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Flame, Users, Heart, Target } from "lucide-react";
+import { Flame, Users, Heart, Target } from "lucide-react";
 import Link from "next/link";
-
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
 import { EmailSignup } from "@/components/EmailSignup";
 
