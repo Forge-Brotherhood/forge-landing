@@ -25,7 +25,7 @@ export default function NotFound() {
           <h2 className="text-3xl font-bold mb-4">Page Not Found</h2>
           
           <p className="text-zinc-300 text-lg mb-8 max-w-md mx-auto">
-            This page doesn't exist.
+            This page doesn&apos;t exist.
           </p>
 
           <Button 
