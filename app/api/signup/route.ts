@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server'
-import { prisma } from '@/lib/prisma'
+import { saveEmailSignup } from '@/lib/dynamodb'
 
 export async function POST(request: Request) {
   try {
@@ -22,31 +22,13 @@ export async function POST(request: Request) {
     }
 
     try {
-      // Check if email already exists
-      const existingSignup = await prisma.emailSignup.findUnique({
-        where: { email },
-      })
-
-      if (existingSignup) {
-        // Don't expose that email already exists - just return success
-        return NextResponse.json(
-          { 
-            message: 'Successfully signed up!',
-            id: existingSignup.id 
-          },
-          { status: 201 }
-        )
-      }
-
-      // Create new signup
-      const signup = await prisma.emailSignup.create({
-        data: { email },
-      })
-
+      // Save email to DynamoDB
+      const result = await saveEmailSignup(email)
+      
       return NextResponse.json(
         { 
           message: 'Successfully signed up!',
-          id: signup.id 
+          id: result.id 
         },
         { status: 201 }
       )

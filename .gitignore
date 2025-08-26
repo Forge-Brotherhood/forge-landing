@@ -42,5 +42,3 @@ next-env.d.ts
 
 # editor directories
 .claude/
-
-/lib/generated/prisma
