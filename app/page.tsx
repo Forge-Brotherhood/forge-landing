@@ -109,9 +109,9 @@ export default function LandingPage() {
               The Epidemic No One Talks About
             </h2>
             <p className="text-zinc-300 text-lg md:text-xl max-w-4xl mx-auto mb-8 leading-relaxed">
-              <span className="text-amber-400 font-semibold">7 out of 10 men have no close friends.</span> We've mastered the art of saying "I'm fine" while dying inside. 
-              Male loneliness is now a <span className="text-amber-400 font-semibold">public health crisis</span>—literally as deadly as smoking a pack a day. The solution isn't another shallow network or quick fix. It's brotherhood. Real brotherhood. <Link href="/manifesto" className="text-amber-400 hover:text-amber-300 underline font-semibold transition-colors underline-offset-4 decoration-2">
-                Read our full manifesto on what we're building.
+              <span className="text-amber-400 font-semibold">7 out of 10 men have no close friends.</span> We&apos;ve mastered the art of saying &quot;I&apos;m fine&quot; while dying inside. 
+              Male loneliness is now a <span className="text-amber-400 font-semibold">public health crisis</span>—literally as deadly as smoking a pack a day. The solution isn&apos;t another shallow network or quick fix. It&apos;s brotherhood. Real brotherhood. <Link href="/manifesto" className="text-amber-400 hover:text-amber-300 underline font-semibold transition-colors underline-offset-4 decoration-2">
+                Read our full manifesto on what we&apos;re building.
               </Link>
             </p>
           </motion.div>
@@ -124,7 +124,7 @@ export default function LandingPage() {
           <Credo
             icon={<Heart className="h-5 w-5" />}
             title="Your Struggles Become Our Battles"
-            copy="Post your job rejection, your relationship mess, your spiritual crisis. Watch men you've never met carry your burden in prayer until breakthrough comes."
+            copy="Post your job rejection, your relationship mess, your spiritual crisis. Watch men you&apos;ve never met carry your burden in prayer until breakthrough comes."
           />
           <Credo
             icon={<Users className="h-5 w-5" />}
@@ -144,7 +144,7 @@ export default function LandingPage() {
         <div className="mx-auto max-w-4xl px-6 py-16 md:py-20">
           <blockquote className="rounded-2xl border border-zinc-800/80 bg-zinc-950/70 p-8 md:p-10 text-zinc-200 text-center shadow-2xl shadow-amber-500/5 backdrop-blur-sm">
             <p className="text-lg md:text-xl lg:text-2xl leading-relaxed font-medium">
-&quot;I was drowning in work stress and marriage issues, putting on a brave face for everyone. These brothers prayed me through my darkest season and celebrated when I got promoted. I'm not the same man.&quot;
+&quot;I was drowning in work stress and marriage issues, putting on a brave face for everyone. These brothers prayed me through my darkest season and celebrated when I got promoted. I&apos;m not the same man.&quot;
             </p>
             <div className="mt-6 text-sm text-zinc-400 font-medium">— Michael, married father of 2</div>
           </blockquote>

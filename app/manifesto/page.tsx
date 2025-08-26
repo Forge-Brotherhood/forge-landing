@@ -92,7 +92,7 @@ export default function ManifestoPage() {
       <section className="relative z-10 min-h-[60vh] flex flex-col items-center justify-center px-6 text-center">
         <div className="max-w-4xl">
           <h1 className="text-5xl md:text-7xl font-bold mb-8 tracking-tight animate-fade-in">
-            What We're Building
+            What We&apos;re Building
           </h1>
           <p className="text-xl md:text-2xl text-zinc-300 max-w-2xl mx-auto animate-fade-in-delay">
             A brotherhood engine
@@ -114,11 +114,11 @@ export default function ManifestoPage() {
                   </p>
                   
                   <p>
-                    Friendship once grew naturally in neighborhoods, workplaces, and churches. But today, the numbers tell the story — men have fewer close friends than ever before, and fewer spaces where vulnerability feels safe. Loneliness has been called an epidemic, and it's crushing not just our spirits, but our health and our futures.
+                    Friendship once grew naturally in neighborhoods, workplaces, and churches. But today, the numbers tell the story — men have fewer close friends than ever before, and fewer spaces where vulnerability feels safe. Loneliness has been called an epidemic, and it&apos;s crushing not just our spirits, but our health and our futures.
                   </p>
                   
                   <p>
-                    We believe the answer isn't another distraction, another shallow network, or another quick fix. The answer is brotherhood.
+                    We believe the answer isn&apos;t another distraction, another shallow network, or another quick fix. The answer is brotherhood.
                   </p>
                   
                   {/* Callout */}
@@ -144,12 +144,12 @@ export default function ManifestoPage() {
                 
                 <div className="space-y-6 text-lg leading-relaxed text-zinc-300">
                   <p>
-                    Prayer is not just words we speak into the air. It's investment. When I pray for another man, I carry his burden with him. I step into his struggle, his hope, his longing for breakthrough. Over time, those shared prayers weave bonds of empathy and trust stronger than small talk or casual acquaintance ever could.
+                    Prayer is not just words we speak into the air. It&apos;s investment. When I pray for another man, I carry his burden with him. I step into his struggle, his hope, his longing for breakthrough. Over time, those shared prayers weave bonds of empathy and trust stronger than small talk or casual acquaintance ever could.
                   </p>
                   
                   <div className="my-16 py-8 border-l-4 border-amber-400/50 pl-8">
                     <p className="text-xl font-medium">
-                      Prayer doesn't just connect us to God.
+                      Prayer doesn&apos;t just connect us to God.
                       <span className="text-amber-400 block mt-1">It connects us to one another.</span>
                     </p>
                   </div>
@@ -165,7 +165,7 @@ export default function ManifestoPage() {
 
               {/* What We're Building Section */}
               <section data-section="what-building" className="scroll-mt-24">
-                <h2 className="text-2xl font-bold text-white mb-8">What We're Building</h2>
+                <h2 className="text-2xl font-bold text-white mb-8">What We&apos;re Building</h2>
                 
                 <div className="space-y-6 text-lg leading-relaxed text-zinc-300">
                   <p>
@@ -177,11 +177,11 @@ export default function ManifestoPage() {
                   </p>
                   
                   <p>
-                    As men consistently engage, something deeper happens. Small circles form — intentional groups of four to six brothers. These aren't random chatrooms. They're private, covenant-level spaces where accountability, vulnerability, and discipleship come alive.
+                    As men consistently engage, something deeper happens. Small circles form — intentional groups of four to six brothers. These aren&apos;t random chatrooms. They&apos;re private, covenant-level spaces where accountability, vulnerability, and discipleship come alive.
                   </p>
                   
                   <p>
-                    This layered design means there's always a place to belong — the open community that's alive with prayer, and the deeper core groups where lives are changed.
+                    This layered design means there&apos;s always a place to belong — the open community that&apos;s alive with prayer, and the deeper core groups where lives are changed.
                   </p>
                 </div>
               </section>
@@ -198,18 +198,18 @@ export default function ManifestoPage() {
                 <h2 className="text-2xl font-bold text-white mb-8">What Makes This Different</h2>
                 
                 <div className="space-y-6 text-lg leading-relaxed text-zinc-300">
-                  <p>We're not building a tool for tracking prayer lists.</p>
-                  <p>We're not building a content platform for mass devotionals.</p>
+                  <p>We&apos;re not building a tool for tracking prayer lists.</p>
+                  <p>We&apos;re not building a content platform for mass devotionals.</p>
                   
                   <div className="my-16 py-8 border-l-4 border-amber-400/50 pl-8">
                     <p className="text-xl font-medium">
-                      We're building a
+                      We&apos;re building a
                       <span className="text-amber-400 block mt-1">forge.</span>
                     </p>
                   </div>
                   
                   <p>
-                    A place where strangers become brothers. Where the discipline of prayer becomes the foundation of trust. Where the digital world doesn't isolate, but unites.
+                    A place where strangers become brothers. Where the discipline of prayer becomes the foundation of trust. Where the digital world doesn&apos;t isolate, but unites.
                   </p>
                   
                   <p>
@@ -235,7 +235,7 @@ export default function ManifestoPage() {
                   </p>
                   
                   <p>
-                    From the first prayer whispered for a stranger, to the moment a man knows he is no longer standing alone — everything we're building points toward that transformation.
+                    From the first prayer whispered for a stranger, to the moment a man knows he is no longer standing alone — everything we&apos;re building points toward that transformation.
                   </p>
                   
                   {/* Final Statement & CTA */}
@@ -256,7 +256,7 @@ export default function ManifestoPage() {
                       </p>
                       
                       <p className="text-2xl text-zinc-300 font-medium mt-12">
-                        And that's what we're building.
+                        And that&apos;s what we&apos;re building.
                       </p>
                       
                       {/* Call to Action */}
@@ -264,7 +264,7 @@ export default function ManifestoPage() {
                         <h3 className="text-2xl font-semibold mb-4">Join the Beta</h3>
                         <p className="text-lg text-zinc-400 mb-8 max-w-xl mx-auto">
                           Be among the first to experience a new way of building brotherhood. 
-                          Help us shape the future of men's community.
+                          Help us shape the future of men&apos;s community.
                         </p>
                         <Link href="/#waitlist">
                           <Button 
