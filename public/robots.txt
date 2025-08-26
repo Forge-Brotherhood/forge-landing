@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://forgebrotherhood.com/sitemap.xml
+Sitemap: https://forge-app.io/sitemap.xml

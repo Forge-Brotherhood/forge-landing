@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://forgebrotherhood.com",
+    url: "https://forge-app.io",
     siteName: "Forge Brotherhood",
     title: "Forge Brotherhood - Real Connection Through Prayer",
     description: "Join a brotherhood forged through prayer. Transform isolation into belonging. Build deep, authentic friendships with men who will stand with you through life's battles.",
@@ -84,7 +84,7 @@ export const metadata: Metadata = {
     ]
   },
   manifest: "/site.webmanifest",
-  metadataBase: new URL("https://forgebrotherhood.com"),
+  metadataBase: new URL("https://forge-app.io"),
   alternates: {
     canonical: "/"
   },
@@ -111,8 +111,8 @@ export default function RootLayout({
     "@type": "Organization",
     name: "Forge Brotherhood",
     description: "A brotherhood engine that transforms male loneliness into deep, authentic connection through the power of prayer.",
-    url: "https://forgebrotherhood.com",
-    logo: "https://forgebrotherhood.com/logo.png",
+    url: "https://forge-app.io",
+    logo: "https://forge-app.io/logo.png",
     sameAs: [
       "https://twitter.com/forgebrotherhood",
       "https://github.com/Forge-Brotherhood"

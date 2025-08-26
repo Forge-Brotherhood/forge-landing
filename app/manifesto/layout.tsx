@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "The Forge Brotherhood Manifesto",
     description: "Discover our vision for transforming male loneliness into brotherhood through the power of prayer and authentic connection.",
-    url: "https://forgebrotherhood.com/manifesto",
+    url: "https://forge-app.io/manifesto",
   },
   twitter: {
     title: "The Forge Brotherhood Manifesto",
