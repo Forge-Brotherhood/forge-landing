@@ -17,25 +17,25 @@ export default function LandingPage() {
 
       {/* Nav */}
       <header className="relative z-10">
-        <div className="mx-auto max-w-7xl px-6 py-8 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <Flame className="h-7 w-7 text-amber-400" />
-            <span className="font-bold tracking-tight text-lg">FORGE</span>
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 py-4 sm:py-6 md:py-8 flex items-center justify-between">
+          <div className="flex items-center gap-2 sm:gap-3">
+            <Flame className="h-6 w-6 sm:h-7 sm:w-7 text-amber-400" />
+            <span className="font-bold tracking-tight text-base sm:text-lg">FORGE</span>
           </div>
-          <div className="bg-gradient-to-r from-amber-500/20 to-red-500/20 border border-amber-500/30 rounded-full px-4 py-2 backdrop-blur-sm">
-            <span className="text-amber-400 text-sm font-semibold">BETA</span>
+          <div className="bg-gradient-to-r from-amber-500/20 to-red-500/20 border border-amber-500/30 rounded-full px-3 py-1.5 sm:px-4 sm:py-2 backdrop-blur-sm">
+            <span className="text-amber-400 text-xs sm:text-sm font-semibold">BETA</span>
           </div>
         </div>
       </header>
 
       {/* Hero */}
       <section className="relative z-10">
-        <div className="mx-auto max-w-5xl px-6 pt-20 pb-24 md:pt-28 md:pb-32 text-center">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 pt-12 pb-16 sm:pt-16 sm:pb-20 md:pt-28 md:pb-32 text-center">
           <motion.h1
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.1]"
+            className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.1]"
           >
             Forge Brotherhood
           </motion.h1>
@@ -44,7 +44,7 @@ export default function LandingPage() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
-            className="mt-8 text-zinc-300 text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto leading-relaxed"
+            className="mt-6 sm:mt-8 text-zinc-300 text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto leading-relaxed px-4 sm:px-0"
           >
             Enough with performative connection. Forge invites you into something deeper — showing up for one another, shoulder to shoulder, with prayer at the center.
           </motion.p>
@@ -54,12 +54,12 @@ export default function LandingPage() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="mt-12 max-w-2xl mx-auto"
+            className="mt-8 sm:mt-10 md:mt-12 max-w-2xl mx-auto px-4 sm:px-6"
           >
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-amber-500/20 via-red-500/20 to-amber-500/20 rounded-3xl blur-xl opacity-30"></div>
               <Card className="relative bg-zinc-950/90 border border-zinc-800/60 backdrop-blur-xl shadow-2xl shadow-amber-500/10 rounded-3xl overflow-hidden">
-                <CardContent className="p-8 md:p-10">
+                <CardContent className="p-6 sm:p-8 md:p-10">
                   <form
                     className="flex flex-col sm:flex-row gap-3"
                     onSubmit={(e) => {
@@ -75,12 +75,12 @@ export default function LandingPage() {
                         type="email"
                         required
                         placeholder="Enter your email address"
-                        className="h-14 bg-zinc-900/60 border-zinc-700/60 text-white placeholder:text-zinc-500 focus:border-amber-500 focus:ring-1 focus:ring-amber-500/20 transition-all duration-300 text-base px-5 rounded-xl backdrop-blur-sm"
+                        className="h-12 sm:h-14 bg-zinc-900/60 border-zinc-700/60 text-white placeholder:text-zinc-500 focus:border-amber-500 focus:ring-1 focus:ring-amber-500/20 transition-all duration-300 text-sm sm:text-base px-4 sm:px-5 rounded-xl backdrop-blur-sm"
                       />
                     </div>
                     <Button
                       type="submit"
-                      className="h-14 px-8 font-semibold bg-gradient-to-r from-amber-500 to-amber-400 text-black hover:from-amber-400 hover:to-amber-300 shadow-xl shadow-amber-500/30 hover:shadow-amber-500/40 transition-all duration-300 rounded-xl flex items-center gap-3 text-base whitespace-nowrap"
+                      className="h-12 sm:h-14 px-6 sm:px-8 font-semibold bg-gradient-to-r from-amber-500 to-amber-400 text-black hover:from-amber-400 hover:to-amber-300 shadow-xl shadow-amber-500/30 hover:shadow-amber-500/40 transition-all duration-300 rounded-xl flex items-center justify-center gap-2 sm:gap-3 text-sm sm:text-base whitespace-nowrap"
                     >
                       Join
                       <ArrowRight className="h-5 w-5" />
@@ -99,16 +99,16 @@ export default function LandingPage() {
 
       {/* Problem Statement */}
       <section className="relative z-10 border-t border-zinc-900/60">
-        <div className="mx-auto max-w-5xl px-6 py-16 md:py-20 text-center">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 py-12 sm:py-16 md:py-20 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-6 leading-tight">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4 sm:mb-6 leading-tight">
               The Epidemic No One Talks About
             </h2>
-            <p className="text-zinc-300 text-lg md:text-xl max-w-4xl mx-auto mb-8 leading-relaxed">
+            <p className="text-zinc-300 text-base sm:text-lg md:text-xl max-w-4xl mx-auto mb-6 sm:mb-8 leading-relaxed">
               <span className="text-amber-400 font-semibold">7 out of 10 men have no close friends.</span> We&apos;ve mastered the art of saying &quot;I&apos;m fine&quot; while dying inside. 
               Male loneliness is now a <span className="text-amber-400 font-semibold">public health crisis</span>—literally as deadly as smoking a pack a day. The solution isn&apos;t another shallow network or quick fix. It&apos;s brotherhood. Real brotherhood. <Link href="/manifesto" className="text-amber-400 hover:text-amber-300 underline font-semibold transition-colors underline-offset-4 decoration-2">
                 Read our full manifesto on what we&apos;re building.
@@ -120,7 +120,7 @@ export default function LandingPage() {
 
       {/* Value Blocks */}
       <section className="relative z-10">
-        <div className="mx-auto max-w-6xl px-6 py-16 md:py-24 grid md:grid-cols-3 gap-8">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 py-12 sm:py-16 md:py-24 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           <Credo
             icon={<Heart className="h-5 w-5" />}
             title="Your Struggles Become Our Battles"
@@ -141,9 +141,9 @@ export default function LandingPage() {
 
       {/* Testimonial */}
       <section className="relative z-10">
-        <div className="mx-auto max-w-4xl px-6 py-16 md:py-20">
-          <blockquote className="rounded-2xl border border-zinc-800/80 bg-zinc-950/70 p-8 md:p-10 text-zinc-200 text-center shadow-2xl shadow-amber-500/5 backdrop-blur-sm">
-            <p className="text-lg md:text-xl lg:text-2xl leading-relaxed font-medium">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 py-12 sm:py-16 md:py-20">
+          <blockquote className="rounded-2xl border border-zinc-800/80 bg-zinc-950/70 p-6 sm:p-8 md:p-10 text-zinc-200 text-center shadow-2xl shadow-amber-500/5 backdrop-blur-sm">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed font-medium">
 &quot;I was drowning in work stress and marriage issues, putting on a brave face for everyone. These brothers prayed me through my darkest season and celebrated when I got promoted. I&apos;m not the same man.&quot;
             </p>
             <div className="mt-6 text-sm text-zinc-400 font-medium">— Michael, married father of 2</div>
@@ -153,12 +153,12 @@ export default function LandingPage() {
 
       {/* Footer CTA */}
       <footer className="relative z-10 border-t border-zinc-900/60">
-        <div className="mx-auto max-w-5xl px-6 py-16 md:py-20 flex flex-col md:flex-row items-center justify-between gap-8">
-          <div>
-            <h3 className="text-2xl md:text-3xl font-semibold tracking-tight">Ready to step in?</h3>
-            <p className="text-zinc-400 mt-2 text-lg">Be among the first to join the brotherhood.</p>
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 py-12 sm:py-16 md:py-20 flex flex-col md:flex-row items-center md:items-start justify-between gap-6 sm:gap-8">
+          <div className="text-center md:text-left">
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold tracking-tight">Ready to step in?</h3>
+            <p className="text-zinc-400 mt-2 text-base sm:text-lg">Be among the first to join the brotherhood.</p>
           </div>
-          <div className="w-full md:w-auto min-w-[400px]">
+          <div className="w-full md:w-auto md:min-w-[400px]">
             <form
               className="flex flex-col sm:flex-row gap-3 p-4 rounded-2xl bg-zinc-950/60 border border-zinc-800/60 backdrop-blur-sm shadow-xl"
               onSubmit={(e) => {
@@ -183,7 +183,7 @@ export default function LandingPage() {
             </form>
           </div>
         </div>
-        <div className="mx-auto max-w-5xl px-6 pb-10 text-xs text-zinc-500">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 pb-8 sm:pb-10 text-xs text-zinc-500 text-center">
           © {new Date().getFullYear()} Forge. All rights reserved.
         </div>
       </footer>
@@ -217,14 +217,14 @@ function BackgroundForge() {
 
 function Credo({ icon, title, copy }: { icon: React.ReactNode; title: string; copy: string }) {
   return (
-    <div className="rounded-2xl border border-zinc-800/80 bg-zinc-950/70 p-6 md:p-8 hover:bg-zinc-950/90 transition-all duration-300 hover:border-zinc-700/80 shadow-lg hover:shadow-xl">
-      <div className="mb-6">
-        <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-amber-500/20 to-red-600/20 border border-zinc-700/60 shadow-lg mb-4 group-hover:shadow-amber-500/10 transition-shadow">
+    <div className="rounded-2xl border border-zinc-800/80 bg-zinc-950/70 p-5 sm:p-6 md:p-8 hover:bg-zinc-950/90 transition-all duration-300 hover:border-zinc-700/80 shadow-lg hover:shadow-xl">
+      <div className="mb-4 sm:mb-6">
+        <div className="inline-flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-xl bg-gradient-to-br from-amber-500/20 to-red-600/20 border border-zinc-700/60 shadow-lg mb-3 sm:mb-4 group-hover:shadow-amber-500/10 transition-shadow">
           <div className="text-amber-400">
             {icon}
           </div>
         </div>
-        <h3 className="font-semibold text-base md:text-lg text-zinc-200">{title}</h3>
+        <h3 className="font-semibold text-sm sm:text-base md:text-lg text-zinc-200">{title}</h3>
       </div>
       <p className="text-sm md:text-base text-zinc-400 leading-relaxed">{copy}</p>
     </div>

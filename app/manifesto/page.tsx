@@ -60,12 +60,12 @@ export default function ManifestoPage() {
 
       {/* Nav */}
       <header className="sticky top-0 backdrop-blur-md bg-[#0b0b0c]/80 border-b border-zinc-900 z-40">
-        <div className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
-            <ArrowLeft className="h-5 w-5 text-zinc-400" />
-            <div className="flex items-center gap-3">
-              <Flame className="h-6 w-6 text-amber-400" />
-              <span className="font-semibold tracking-tight">FORGE</span>
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">
+          <Link href="/" className="flex items-center gap-2 sm:gap-3 hover:opacity-80 transition-opacity">
+            <ArrowLeft className="h-4 w-4 sm:h-5 sm:w-5 text-zinc-400" />
+            <div className="flex items-center gap-2 sm:gap-3">
+              <Flame className="h-5 w-5 sm:h-6 sm:w-6 text-amber-400" />
+              <span className="font-semibold tracking-tight text-sm sm:text-base">FORGE</span>
             </div>
           </Link>
 
@@ -89,26 +89,26 @@ export default function ManifestoPage() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative z-10 min-h-[60vh] flex flex-col items-center justify-center px-6 text-center">
+      <section className="relative z-10 min-h-[50vh] sm:min-h-[60vh] flex flex-col items-center justify-center px-4 sm:px-6 text-center">
         <div className="max-w-4xl">
-          <h1 className="text-5xl md:text-7xl font-bold mb-8 tracking-tight animate-fade-in">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-6 sm:mb-8 tracking-tight animate-fade-in">
             What We&apos;re Building
           </h1>
-          <p className="text-xl md:text-2xl text-zinc-300 max-w-2xl mx-auto animate-fade-in-delay">
+          <p className="text-lg sm:text-xl md:text-2xl text-zinc-300 max-w-2xl mx-auto animate-fade-in-delay">
             A brotherhood engine
           </p>
         </div>
-        <ChevronDown className="h-6 w-6 mt-16 animate-bounce text-zinc-500" />
+        <ChevronDown className="h-5 w-5 sm:h-6 sm:w-6 mt-12 sm:mt-16 animate-bounce text-zinc-500" />
       </section>
 
       {/* Content */}
       <main className="relative z-10">
-        <div className="mx-auto max-w-4xl px-6 pb-20">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 pb-16 sm:pb-20">
           <article className="max-w-none">
             <div className="space-y-32">
               {/* Introduction Section */}
               <section data-section="intro" className="scroll-mt-24">
-                <div className="space-y-6 text-lg leading-relaxed text-zinc-300">
+                <div className="space-y-4 sm:space-y-6 text-base sm:text-lg leading-relaxed text-zinc-300">
                   <p>
                     We live in an age where men are surrounded by noise but starved for connection. We scroll endlessly, we consume content, we chase accomplishments — yet many of us carry a quiet ache: Who truly knows me? Who would stand with me when the weight gets heavy?
                   </p>
@@ -122,8 +122,8 @@ export default function ManifestoPage() {
                   </p>
                   
                   {/* Callout */}
-                  <div className="my-16 py-8 border-l-4 border-amber-400/50 pl-8">
-                    <p className="text-xl font-medium">
+                  <div className="my-12 sm:my-16 py-6 sm:py-8 border-l-4 border-amber-400/50 pl-6 sm:pl-8">
+                    <p className="text-lg sm:text-xl font-medium">
                       And the forge for that brotherhood is
                       <span className="text-amber-400 block mt-1">prayer.</span>
                     </p>
@@ -142,13 +142,13 @@ export default function ManifestoPage() {
               <section data-section="why-prayer" className="scroll-mt-24">
                 <h2 className="text-2xl font-bold text-white mb-8">Why Prayer?</h2>
                 
-                <div className="space-y-6 text-lg leading-relaxed text-zinc-300">
+                <div className="space-y-4 sm:space-y-6 text-base sm:text-lg leading-relaxed text-zinc-300">
                   <p>
                     Prayer is not just words we speak into the air. It&apos;s investment. When I pray for another man, I carry his burden with him. I step into his struggle, his hope, his longing for breakthrough. Over time, those shared prayers weave bonds of empathy and trust stronger than small talk or casual acquaintance ever could.
                   </p>
                   
-                  <div className="my-16 py-8 border-l-4 border-amber-400/50 pl-8">
-                    <p className="text-xl font-medium">
+                  <div className="my-12 sm:my-16 py-6 sm:py-8 border-l-4 border-amber-400/50 pl-6 sm:pl-8">
+                    <p className="text-lg sm:text-xl font-medium">
                       Prayer doesn&apos;t just connect us to God.
                       <span className="text-amber-400 block mt-1">It connects us to one another.</span>
                     </p>
@@ -167,7 +167,7 @@ export default function ManifestoPage() {
               <section data-section="what-building" className="scroll-mt-24">
                 <h2 className="text-2xl font-bold text-white mb-8">What We&apos;re Building</h2>
                 
-                <div className="space-y-6 text-lg leading-relaxed text-zinc-300">
+                <div className="space-y-4 sm:space-y-6 text-base sm:text-lg leading-relaxed text-zinc-300">
                   <p>
                     We are building a living network of men forged together through prayer. Not a list manager. Not a content feed. A brotherhood engine.
                   </p>
@@ -197,12 +197,12 @@ export default function ManifestoPage() {
               <section data-section="what-different" className="scroll-mt-24">
                 <h2 className="text-2xl font-bold text-white mb-8">What Makes This Different</h2>
                 
-                <div className="space-y-6 text-lg leading-relaxed text-zinc-300">
+                <div className="space-y-4 sm:space-y-6 text-base sm:text-lg leading-relaxed text-zinc-300">
                   <p>We&apos;re not building a tool for tracking prayer lists.</p>
                   <p>We&apos;re not building a content platform for mass devotionals.</p>
                   
-                  <div className="my-16 py-8 border-l-4 border-amber-400/50 pl-8">
-                    <p className="text-xl font-medium">
+                  <div className="my-12 sm:my-16 py-6 sm:py-8 border-l-4 border-amber-400/50 pl-6 sm:pl-8">
+                    <p className="text-lg sm:text-xl font-medium">
                       We&apos;re building a
                       <span className="text-amber-400 block mt-1">forge.</span>
                     </p>
@@ -229,7 +229,7 @@ export default function ManifestoPage() {
               <section data-section="vision" className="scroll-mt-24">
                 <h2 className="text-2xl font-bold text-white mb-8">The Vision</h2>
                 
-                <div className="space-y-6 text-lg leading-relaxed text-zinc-300">
+                <div className="space-y-4 sm:space-y-6 text-base sm:text-lg leading-relaxed text-zinc-300">
                   <p>
                     Our vision is not just to help men pray more. Our vision is to raise up circles of men bound together in strength, purpose, and faith — circles that ripple outward into families, churches, and communities.
                   </p>
@@ -247,22 +247,22 @@ export default function ManifestoPage() {
                         <div className="w-16 h-px bg-zinc-700" />
                       </div>
                       
-                      <p className="text-xl text-zinc-400">
+                      <p className="text-lg sm:text-xl text-zinc-400">
                         Because what men need most is not another app.
                       </p>
                       
-                      <p className="text-4xl font-bold">
+                      <p className="text-2xl sm:text-3xl md:text-4xl font-bold">
                         What men need most is <span className="text-amber-400">each other.</span>
                       </p>
                       
-                      <p className="text-2xl text-zinc-300 font-medium mt-12">
+                      <p className="text-xl sm:text-2xl text-zinc-300 font-medium mt-8 sm:mt-12">
                         And that&apos;s what we&apos;re building.
                       </p>
                       
                       {/* Call to Action */}
-                      <div className="mt-20 pt-12 border-t border-zinc-800">
-                        <h3 className="text-2xl font-semibold mb-4">Join the Beta</h3>
-                        <p className="text-lg text-zinc-400 mb-8 max-w-xl mx-auto">
+                      <div className="mt-16 sm:mt-20 pt-8 sm:pt-12 border-t border-zinc-800">
+                        <h3 className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4">Join the Beta</h3>
+                        <p className="text-base sm:text-lg text-zinc-400 mb-6 sm:mb-8 max-w-xl mx-auto">
                           Be among the first to experience a new way of building brotherhood. 
                           Help us shape the future of men&apos;s community.
                         </p>
