@@ -87,7 +87,10 @@ export default function LandingPage() {
             </h2>
             <p className="text-zinc-300 text-base sm:text-lg md:text-xl max-w-4xl mx-auto mb-6 sm:mb-8 leading-relaxed">
               <span className="text-amber-400 font-semibold">7 out of 10 men have no close friends.</span> We&apos;ve mastered the art of saying &quot;I&apos;m fine&quot; while dying inside. 
-              Male loneliness is now a <span className="text-amber-400 font-semibold">public health crisis</span>—literally as deadly as smoking a pack a day. The solution isn&apos;t another shallow network or quick fix. It&apos;s brotherhood. Real brotherhood. <Link href="/manifesto" className="text-amber-400 hover:text-amber-300 underline font-semibold transition-colors underline-offset-4 decoration-2">
+              Male loneliness is now a <span className="text-amber-400 font-semibold">public health crisis</span>—literally as deadly as smoking a pack a day. The solution isn&apos;t another shallow network or quick fix. It&apos;s brotherhood. Real brotherhood.
+            </p>
+            <p className="text-zinc-300 text-base sm:text-lg md:text-xl max-w-4xl mx-auto leading-relaxed">
+              <Link href="/manifesto" className="text-amber-400 hover:text-amber-300 underline font-semibold transition-colors underline-offset-4 decoration-2">
                 Read our full manifesto on what we&apos;re building.
               </Link>
             </p>
@@ -128,8 +131,8 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Footer CTA */}
-      <footer className="relative z-10 border-t border-zinc-900/60">
+      {/* Final CTA */}
+      <section className="relative z-10 border-t border-zinc-900/60">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 py-12 sm:py-16 md:py-20 flex flex-col md:flex-row items-center md:items-start justify-between gap-6 sm:gap-8">
           <div className="text-center md:text-left">
             <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold tracking-tight">Ready to step in?</h3>
@@ -145,10 +148,7 @@ export default function LandingPage() {
             </div>
           </div>
         </div>
-        <div className="mx-auto max-w-5xl px-4 sm:px-6 pb-8 sm:pb-10 text-xs text-zinc-500 text-center">
-          © {new Date().getFullYear()} Forge. All rights reserved.
-        </div>
-      </footer>
+      </section>
     </div>
   );
 }

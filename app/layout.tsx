@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import Footer from "@/components/Footer";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -16,7 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: {
     default: "Forge Brotherhood - Real Connection Through Prayer",
-    template: "%s | Forge Brotherhood"
+    template: "%s | Forge"
   },
   description: "Join a brotherhood forged through prayer. Transform isolation into belonging. Build deep, authentic friendships with men who will stand with you through life's battles.",
   keywords: [
@@ -30,9 +31,9 @@ export const metadata: Metadata = {
     "spiritual growth",
     "men's support groups"
   ],
-  authors: [{ name: "Forge Brotherhood" }],
-  creator: "Forge Brotherhood",
-  publisher: "Forge Brotherhood",
+  authors: [{ name: "Forge" }],
+  creator: "Forge",
+  publisher: "Forge",
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -110,7 +111,7 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "Forge Brotherhood",
+    name: "Forge",
     description: "A brotherhood engine that transforms male loneliness into deep, authentic connection through the power of prayer.",
     url: "https://forge-app.io",
     logo: "https://forge-app.io/logo.png",
@@ -118,7 +119,7 @@ export default function RootLayout({
       "https://twitter.com/forgebrotherhood",
       "https://github.com/Forge-Brotherhood"
     ],
-    foundingDate: "2024",
+    foundingDate: "2025",
     slogan: "Real Connection Through Prayer"
   };
 
@@ -134,7 +135,12 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#0b0b0c] text-white min-h-screen`}
       >
         <GoogleAnalytics />
-        {children}
+        <div className="flex flex-col min-h-screen">
+          <main className="flex-1">
+            {children}
+          </main>
+          <Footer />
+        </div>
       </body>
     </html>
   );
