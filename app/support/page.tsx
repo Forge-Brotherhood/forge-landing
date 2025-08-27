@@ -1,4 +1,5 @@
 "use client";
+/* eslint-disable react/no-unescaped-entities */
 
 import React, { useState } from "react";
 import { Flame, ArrowLeft, Mail, MessageCircle, Shield, Clock, ChevronRight } from "lucide-react";
