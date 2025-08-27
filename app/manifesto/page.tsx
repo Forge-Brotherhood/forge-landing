@@ -140,7 +140,7 @@ export default function ManifestoPage() {
                   </p>
                   
                   <p className="leading-loose">
-                    In that sacred act, I choose to see the world through his eyes and to plead with God on his behalf, as brothers-in-arms lifting shields together in battle. To pray for another is to say, "Your battle is mine. I will stand on the frontlines with you. I will bring your need before the One who can change everything." Over time, those prayers become battle-tested bonds, cords of empathy and trust stronger than small talk or shared interests could ever create.
+                    In that sacred act, I choose to see the world through his eyes and to plead with God on his behalf, as brothers-in-arms lifting shields together in battle. To pray for another is to say, &quot;Your battle is mine. I will stand on the frontlines with you. I will bring your need before the One who can change everything.&quot; Over time, those prayers become battle-tested bonds, cords of empathy and trust stronger than small talk or shared interests could ever create.
                   </p>
                   
                   <p className="leading-loose">
