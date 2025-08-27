@@ -30,10 +30,10 @@ export default function ManifestoPage() {
   }, []);
 
   const sections = [
-    { id: "intro", title: "Introduction" },
+    { id: "what-building", title: "Introduction" },
     { id: "why-prayer", title: "Why Prayer?" },
-    { id: "what-building", title: "What We're Building" },
-    { id: "what-different", title: "What Makes This Different" },
+    { id: "what-building-2", title: "What We're Building" },
+    { id: "what-different", title: "What Makes Us Different" },
     { id: "vision", title: "The Vision" }
   ];
 
@@ -103,173 +103,153 @@ export default function ManifestoPage() {
 
       {/* Content */}
       <main className="relative z-10">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 pb-16 sm:pb-20">
-          <article className="max-w-none">
-            <div className="space-y-32">
-              {/* Introduction Section */}
-              <section data-section="intro" className="scroll-mt-24">
-                <div className="space-y-4 sm:space-y-6 text-base sm:text-lg leading-relaxed text-zinc-300">
-                  <p>
-                    We live in an age where men are surrounded by noise but starved for connection. We scroll endlessly, we consume content, we chase accomplishments — yet many of us carry a quiet ache: Who truly knows me? Who would stand with me when the weight gets heavy?
+        <div className="mx-auto max-w-3xl px-6 sm:px-8 lg:px-12 pb-20 sm:pb-32">
+          <article className="prose prose-lg prose-invert max-w-none">
+            <div className="space-y-24 sm:space-y-32">
+              {/* What We're Building Introduction Section */}
+              <section data-section="what-building" className="scroll-mt-28">
+                <div className="space-y-6 sm:space-y-8 text-lg sm:text-xl leading-relaxed text-zinc-200">
+                  <p className="leading-loose">
+                    We live in an age where men are surrounded by noise but starved for connection. We scroll endlessly, chase accomplishments, and consume content — yet beneath the surface many of us carry a quiet ache: the loneliness of being surrounded by people, yet still unseen.
                   </p>
                   
-                  <p>
-                    Friendship once grew naturally in neighborhoods, workplaces, and churches. But today, the numbers tell the story — men have fewer close friends than ever before, and fewer spaces where vulnerability feels safe. Loneliness has been called an epidemic, and it&apos;s crushing not just our spirits, but our health and our futures.
+                  <p className="leading-loose">
+                    Once, friendship grew naturally in neighborhoods, workplaces, and churches. Today, those spaces are fading. The numbers tell the story: only <span className="text-amber-400 font-bold">27%</span> of men report having at least six close friends, down from <span className="text-amber-400 font-bold">55%</span> in <span className="text-amber-400 font-bold">1995</span>. Just <span className="text-amber-400 font-bold">30%</span> of men say they had an emotionally vulnerable conversation in the last week. Loneliness has become a pandemic, and the U.S. Surgeon General warns its impact on health is equivalent to smoking <span className="text-amber-400 font-bold">15 cigarettes a day</span>. It leaves men isolated, anxious, and adrift — crushing not only spirits, but also bodies, futures, and families.
                   </p>
                   
-                  <p>
-                    We believe the answer isn&apos;t another distraction, another shallow network, or another quick fix. The answer is brotherhood.
+                  <p className="leading-loose">
+                    The world offers endless distractions and shallow networks, but they cannot heal this wound. What men need is not another feed to scroll or another mask to wear, but a brotherhood rooted in Christ — where strength is found through vulnerability, where burdens are carried together, and where lives are anchored in something eternal.
                   </p>
-                  
-                  {/* Callout */}
-                  <div className="my-12 sm:my-16 py-6 sm:py-8 border-l-4 border-amber-400/50 pl-6 sm:pl-8">
-                    <p className="text-lg sm:text-xl font-medium">
-                      And the forge for that brotherhood is
-                      <span className="text-amber-400 block mt-1">prayer.</span>
-                    </p>
-                  </div>
                 </div>
               </section>
 
               {/* Section Break */}
-              <div className="flex items-center justify-center">
-                <div className="w-24 h-px bg-zinc-700" />
-                <Flame className="h-5 w-5 mx-4 text-amber-400/50" />
-                <div className="w-24 h-px bg-zinc-700" />
+              <div className="flex items-center justify-center my-16 sm:my-20">
+                <div className="w-32 h-px bg-gradient-to-r from-transparent via-zinc-700 to-transparent" />
+                <Flame className="h-6 w-6 mx-6 text-amber-400/60 animate-pulse" />
+                <div className="w-32 h-px bg-gradient-to-l from-transparent via-zinc-700 to-transparent" />
               </div>
 
               {/* Why Prayer Section */}
-              <section data-section="why-prayer" className="scroll-mt-24">
-                <h2 className="text-2xl font-bold text-white mb-8">Why Prayer?</h2>
+              <section data-section="why-prayer" className="scroll-mt-28">
+                <h2 className="text-3xl sm:text-4xl font-bold text-white mb-10 tracking-tight">Why Prayer?</h2>
                 
-                <div className="space-y-4 sm:space-y-6 text-base sm:text-lg leading-relaxed text-zinc-300">
-                  <p>
-                    Prayer is not just words we speak into the air. It&apos;s investment. When I pray for another man, I carry his burden with him. I step into his struggle, his hope, his longing for breakthrough. Over time, those shared prayers weave bonds of empathy and trust stronger than small talk or casual acquaintance ever could.
+                <div className="space-y-6 sm:space-y-8 text-lg sm:text-xl leading-relaxed text-zinc-200">
+                  <p className="leading-loose">
+                    Prayer is not just words we speak into the air. It is a spiritual investment with eternal weight. When I pray for another man, I am not standing at a distance — I am stepping into his story, taking up his fight as my own. I carry his burden with him before the throne of God. I enter into his struggle, his fears, his hopes, and his longing for breakthrough.
                   </p>
                   
-                  <div className="my-12 sm:my-16 py-6 sm:py-8 border-l-4 border-amber-400/50 pl-6 sm:pl-8">
-                    <p className="text-lg sm:text-xl font-medium">
-                      Prayer doesn&apos;t just connect us to God.
-                      <span className="text-amber-400 block mt-1">It connects us to one another.</span>
-                    </p>
-                  </div>
+                  <p className="leading-loose">
+                    In that sacred act, I choose to see the world through his eyes and to plead with God on his behalf, as brothers-in-arms lifting shields together in battle. To pray for another is to say, "Your battle is mine. I will stand on the frontlines with you. I will bring your need before the One who can change everything." Over time, those prayers become battle-tested bonds, cords of empathy and trust stronger than small talk or shared interests could ever create.
+                  </p>
+                  
+                  <p className="leading-loose">
+                    This is why we begin with prayer. Because true brotherhood cannot be built on hobbies, opinions, or convenience — it must be forged in something eternal. When men bring one another before Christ, they meet not only at the surface of friendship but at the deepest place of the soul. Prayer is the foundation, because it unites us first to God, and then to one another, in a bond that cannot be broken.
+                  </p>
                 </div>
               </section>
 
               {/* Section Break */}
-              <div className="flex items-center justify-center">
-                <div className="w-24 h-px bg-zinc-700" />
-                <Flame className="h-5 w-5 mx-4 text-amber-400/50" />
-                <div className="w-24 h-px bg-zinc-700" />
+              <div className="flex items-center justify-center my-16 sm:my-20">
+                <div className="w-32 h-px bg-gradient-to-r from-transparent via-zinc-700 to-transparent" />
+                <Flame className="h-6 w-6 mx-6 text-amber-400/60 animate-pulse" />
+                <div className="w-32 h-px bg-gradient-to-l from-transparent via-zinc-700 to-transparent" />
               </div>
 
               {/* What We're Building Section */}
-              <section data-section="what-building" className="scroll-mt-24">
-                <h2 className="text-2xl font-bold text-white mb-8">What We&apos;re Building</h2>
+              <section data-section="what-building-2" className="scroll-mt-28">
+                <h2 className="text-3xl sm:text-4xl font-bold text-white mb-10 tracking-tight">What We&apos;re Building</h2>
                 
-                <div className="space-y-4 sm:space-y-6 text-base sm:text-lg leading-relaxed text-zinc-300">
-                  <p>
-                    We are building a living network of men forged together through prayer. Not a list manager. Not a content feed. A brotherhood engine.
+                <div className="space-y-6 sm:space-y-8 text-lg sm:text-xl leading-relaxed text-zinc-200">
+                  <p className="leading-loose">
+                    We are building a living network of men, forged together through prayer and rooted in Christ. <strong className="text-amber-400">Not a list manager. Not a content feed. A brotherhood engine.</strong>
                   </p>
                   
-                  <p>
-                    It begins simply: a man shares a request. Another man prays. A thread is born. Over days and weeks, that thread grows — with encouragement, updates, answered prayers, and testimony. Each thread becomes a living story of faith and friendship.
+                  <p className="leading-loose">
+                    It begins simply: a man shares a request. Another man prays. A thread is born. Over days and weeks, that thread grows — with encouragement, updates, answered prayers, and testimony. Each thread becomes a living story of faith, friendship, and Jesus&apos;s hand at work.
                   </p>
                   
-                  <p>
-                    As men consistently engage, something deeper happens. Small circles form — intentional groups of four to six brothers. These aren&apos;t random chatrooms. They&apos;re private, covenant-level spaces where accountability, vulnerability, and discipleship come alive.
-                  </p>
-                  
-                  <p>
-                    This layered design means there&apos;s always a place to belong — the open community that&apos;s alive with prayer, and the deeper core groups where lives are changed.
+                  <p className="leading-loose">  
+                    As men lean in with consistency, something deeper happens. Small circles form — intentional groups of four to six brothers in Christ. These are not random groups, but covenant spaces where accountability, vulnerability, and discipleship come alive. This layered design ensures there is always a place to belong — the open community, vibrant with prayer, and the deeper core groups, where lives are transformed.
                   </p>
                 </div>
               </section>
 
               {/* Section Break */}
-              <div className="flex items-center justify-center">
-                <div className="w-24 h-px bg-zinc-700" />
-                <Flame className="h-5 w-5 mx-4 text-amber-400/50" />
-                <div className="w-24 h-px bg-zinc-700" />
+              <div className="flex items-center justify-center my-16 sm:my-20">
+                <div className="w-32 h-px bg-gradient-to-r from-transparent via-zinc-700 to-transparent" />
+                <Flame className="h-6 w-6 mx-6 text-amber-400/60 animate-pulse" />
+                <div className="w-32 h-px bg-gradient-to-l from-transparent via-zinc-700 to-transparent" />
               </div>
 
               {/* What Makes This Different Section */}
-              <section data-section="what-different" className="scroll-mt-24">
-                <h2 className="text-2xl font-bold text-white mb-8">What Makes This Different</h2>
+              <section data-section="what-different" className="scroll-mt-28">
+                <h2 className="text-3xl sm:text-4xl font-bold text-white mb-10 tracking-tight">What Makes Us Different</h2>
                 
-                <div className="space-y-4 sm:space-y-6 text-base sm:text-lg leading-relaxed text-zinc-300">
-                  <p>We&apos;re not building a tool for tracking prayer lists.</p>
-                  <p>We&apos;re not building a content platform for mass devotionals.</p>
-                  
-                  <div className="my-12 sm:my-16 py-6 sm:py-8 border-l-4 border-amber-400/50 pl-6 sm:pl-8">
-                    <p className="text-lg sm:text-xl font-medium">
-                      We&apos;re building a
-                      <span className="text-amber-400 block mt-1">forge.</span>
-                    </p>
-                  </div>
-                  
-                  <p>
-                    A place where strangers become brothers. Where the discipline of prayer becomes the foundation of trust. Where the digital world doesn&apos;t isolate, but unites.
+                <div className="space-y-6 sm:space-y-8 text-lg sm:text-xl leading-relaxed text-zinc-200">
+                  <p className="leading-loose">
+                    We&apos;re not building a tool for tracking prayer lists. We&apos;re not building a content platform for mass devotionals. <strong className="text-amber-400">We&apos;re building a forge</strong> — a place where strangers become brothers, their lives grounded in Christ.
                   </p>
                   
-                  <p>
-                    This is the missing piece for our generation: a scalable way to turn isolation into intimacy, loneliness into belonging, and faith into brotherhood.
+                  <p className="leading-loose">
+                    In an age where loneliness has been declared an epidemic, prayer is not a small remedy but a radical one. It cuts through isolation and builds trust where none existed. In prayer, men carry one another&apos;s burdens, discover they are not alone, and find strength in Christ together.
+                  </p>
+                  
+                  <p className="leading-loose">
+                    The digital world, so often a driver of disconnection, here becomes a channel of unity — a scalable way to turn isolation into intimacy, loneliness into belonging, and faith into brotherhood. This is not just an app; it is a Christ-centered answer to the ache of a generation starved for real connection.
                   </p>
                 </div>
               </section>
 
               {/* Section Break */}
-              <div className="flex items-center justify-center">
-                <div className="w-24 h-px bg-zinc-700" />
-                <Flame className="h-5 w-5 mx-4 text-amber-400/50" />
-                <div className="w-24 h-px bg-zinc-700" />
+              <div className="flex items-center justify-center my-16 sm:my-20">
+                <div className="w-32 h-px bg-gradient-to-r from-transparent via-zinc-700 to-transparent" />
+                <Flame className="h-6 w-6 mx-6 text-amber-400/60 animate-pulse" />
+                <div className="w-32 h-px bg-gradient-to-l from-transparent via-zinc-700 to-transparent" />
               </div>
 
               {/* The Vision Section */}
-              <section data-section="vision" className="scroll-mt-24">
-                <h2 className="text-2xl font-bold text-white mb-8">The Vision</h2>
+              <section data-section="vision" className="scroll-mt-28">
+                <h2 className="text-3xl sm:text-4xl font-bold text-white mb-10 tracking-tight">The Vision</h2>
                 
-                <div className="space-y-4 sm:space-y-6 text-base sm:text-lg leading-relaxed text-zinc-300">
-                  <p>
+                <div className="space-y-6 sm:space-y-8 text-lg sm:text-xl leading-relaxed text-zinc-200">
+                  <p className="leading-loose">
                     Our vision is not just to help men pray more. Our vision is to raise up circles of men bound together in strength, purpose, and faith — circles that ripple outward into families, churches, and communities.
                   </p>
                   
-                  <p>
+                  <p className="leading-loose">
                     From the first prayer whispered for a stranger, to the moment a man knows he is no longer standing alone — everything we&apos;re building points toward that transformation.
                   </p>
                   
+                  <p className="leading-loose">
+                    And that transformation doesn&apos;t stop with the individual. Each circle becomes a catalyst for renewal, equipping men to lead their homes with love, to strengthen their local churches with service, and to impact their workplaces and neighborhoods with the gospel.
+                  </p>
+                  
                   {/* Final Statement & CTA */}
-                  <div className="mt-24 pt-20">
-                    <div className="max-w-3xl mx-auto text-center space-y-8">
-                      <div className="flex items-center justify-center mb-12">
-                        <div className="w-16 h-px bg-zinc-700" />
-                        <Flame className="h-6 w-6 mx-4 text-amber-400" />
-                        <div className="w-16 h-px bg-zinc-700" />
+                  <div className="mt-32 pt-24">
+                    <div className="max-w-3xl mx-auto text-center space-y-12">
+                      <div className="flex items-center justify-center mb-16">
+                        <div className="w-20 h-px bg-gradient-to-r from-transparent via-amber-400/30 to-transparent" />
+                        <Flame className="h-8 w-8 mx-6 text-amber-400 animate-pulse" />
+                        <div className="w-20 h-px bg-gradient-to-l from-transparent via-amber-400/30 to-transparent" />
                       </div>
                       
-                      <p className="text-lg sm:text-xl text-zinc-400">
-                        Because what men need most is not another app.
-                      </p>
-                      
-                      <p className="text-2xl sm:text-3xl md:text-4xl font-bold">
-                        What men need most is <span className="text-amber-400">each other.</span>
-                      </p>
-                      
-                      <p className="text-xl sm:text-2xl text-zinc-300 font-medium mt-8 sm:mt-12">
-                        And that&apos;s what we&apos;re building.
+                      <p className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
+                        A brotherhood engine,<br/>
+                        <span className="text-amber-400">rooted in Christ.</span>
                       </p>
                       
                       {/* Call to Action */}
-                      <div className="mt-16 sm:mt-20 pt-8 sm:pt-12 border-t border-zinc-800">
-                        <h3 className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4">Join the Beta</h3>
-                        <p className="text-base sm:text-lg text-zinc-400 mb-6 sm:mb-8 max-w-xl mx-auto">
+                      <div className="mt-20 sm:mt-28 pt-12 sm:pt-16 border-t border-zinc-800/50">
+                        <h3 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">Join the Beta</h3>
+                        <p className="text-lg sm:text-xl text-zinc-300 mb-8 sm:mb-10 max-w-xl mx-auto leading-relaxed">
                           Be among the first to experience a new way of building brotherhood. 
                           Help us shape the future of men&apos;s community.
                         </p>
                         <Link href="/#waitlist">
                           <Button 
                             size="lg" 
-                            className="bg-amber-500 hover:bg-amber-600 text-black font-semibold px-8 py-6 text-lg"
+                            className="bg-amber-500 hover:bg-amber-600 text-black font-bold px-10 py-7 text-lg rounded-lg transition-all transform hover:scale-105 shadow-xl hover:shadow-2xl"
                           >
                             Request Early Access
                           </Button>
