@@ -20,7 +20,7 @@ export default function SupportPage() {
     },
     {
       question: "How much will Forge cost?",
-      answer: "We&apos;re still finalizing our pricing model, but our goal is to make Forge accessible to all men who want to grow in faith and brotherhood. Beta members may receive special pricing."
+      answer: "We're still finalizing our pricing model, but our goal is to make Forge accessible to all men who want to grow in faith and brotherhood. Beta members may receive special pricing."
     },
     {
       question: "Is Forge only for Christians?",
@@ -40,7 +40,7 @@ export default function SupportPage() {
     },
     {
       question: "What makes Forge different from other Christian apps?",
-      answer: "Forge isn&apos;t another content platform or prayer list manager. We&apos;re building a brotherhood engine - focused on real relationships, not passive consumption. Every feature is designed to forge genuine connections between men."
+      answer: "Forge isn't another content platform or prayer list manager. We're building a brotherhood engine—focused on real relationships, not passive consumption. Every feature is designed to forge genuine connections between men."
     }
   ];
 
@@ -188,7 +188,7 @@ export default function SupportPage() {
                   <div>
                     <h3 className="font-semibold text-lg mb-2 text-white">Response Times</h3>
                     <p className="text-zinc-300 text-sm sm:text-base leading-relaxed">
-                      We&apos;re a small team building something big. We read every message and typically respond within 24-48 hours. 
+                      We're a small team building something big. We read every message and typically respond within 24-48 hours. 
                       Your patience means everything as we work to serve this growing brotherhood.
                     </p>
                   </div>
@@ -203,7 +203,7 @@ export default function SupportPage() {
               Still Have Questions?
             </h2>
             <p className="text-zinc-300 mb-8 max-w-2xl mx-auto">
-              We&apos;re here to help. Reach out anytime and we&apos;ll get back to you as soon as we can.
+              We're here to help. Reach out anytime and we'll get back to you as soon as we can.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="mailto:support@forge-app.io">
