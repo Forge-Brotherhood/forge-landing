@@ -2,10 +2,11 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { CheckCircle, Flame, ArrowRight, Users, Bell, Heart, Home } from "lucide-react";
+import { CheckCircle, ArrowRight, Users, Bell, Heart, Home } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Header } from "@/components/Header";
 
 export default function ThankYouPage() {
   return (
@@ -17,14 +18,7 @@ export default function ThankYouPage() {
       </div>
 
       {/* Header */}
-      <header className="relative z-10">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 py-4 sm:py-6 md:py-8 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2 sm:gap-3 hover:opacity-80 transition-opacity">
-            <Flame className="h-6 w-6 sm:h-7 sm:w-7 text-amber-400" />
-            <span className="font-bold tracking-tight text-base sm:text-lg">FORGE</span>
-          </Link>
-        </div>
-      </header>
+      <Header />
 
       {/* Main Content */}
       <section className="relative z-10">

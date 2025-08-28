@@ -2,10 +2,11 @@
 /* eslint-disable react/no-unescaped-entities */
 
 import React, { useState } from "react";
-import { Flame, ArrowLeft, Mail, MessageCircle, Shield, Clock, ChevronRight } from "lucide-react";
+import { Mail, MessageCircle, Shield, Clock, ChevronRight } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Header } from "@/components/Header";
 
 export default function SupportPage() {
   const [expandedFaq, setExpandedFaq] = useState<number | null>(null);
@@ -58,17 +59,7 @@ export default function SupportPage() {
       </div>
 
       {/* Nav */}
-      <header className="sticky top-0 backdrop-blur-md bg-[#0b0b0c]/80 border-b border-zinc-900 z-40">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2 sm:gap-3 hover:opacity-80 transition-opacity">
-            <ArrowLeft className="h-4 w-4 sm:h-5 sm:w-5 text-zinc-400" />
-            <div className="flex items-center gap-2 sm:gap-3">
-              <Flame className="h-5 w-5 sm:h-6 sm:w-6 text-amber-400" />
-              <span className="font-semibold tracking-tight text-sm sm:text-base">FORGE</span>
-            </div>
-          </Link>
-        </div>
-      </header>
+      <Header />
 
       {/* Hero Section */}
       <section className="relative z-10 pt-12 sm:pt-16 md:pt-20 pb-8 sm:pb-12">

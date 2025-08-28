@@ -1,46 +1,24 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { Flame, ArrowLeft, ChevronDown } from "lucide-react";
+import { ChevronDown, Flame } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { Header } from "@/components/Header";
 
 export default function ManifestoPage() {
   const [scrollProgress, setScrollProgress] = useState(0);
-  const [activeSection, setActiveSection] = useState("");
 
   useEffect(() => {
     const handleScroll = () => {
       const totalScroll = document.documentElement.scrollHeight - window.innerHeight;
       const currentProgress = (window.scrollY / totalScroll) * 100;
       setScrollProgress(currentProgress);
-
-      // Update active section based on scroll position
-      const sections = document.querySelectorAll('[data-section]');
-      sections.forEach((section) => {
-        const rect = section.getBoundingClientRect();
-        if (rect.top <= 100 && rect.bottom >= 100) {
-          setActiveSection(section.getAttribute('data-section') || '');
-        }
-      });
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  const sections = [
-    { id: "what-building", title: "Introduction" },
-    { id: "why-prayer", title: "Why Prayer?" },
-    { id: "what-building-2", title: "What We're Building" },
-    { id: "what-different", title: "What Makes Us Different" },
-    { id: "vision", title: "The Vision" }
-  ];
-
-  const handleSectionClick = (sectionId: string) => {
-    const element = document.querySelector(`[data-section="${sectionId}"]`);
-    element?.scrollIntoView({ behavior: 'smooth' });
-  };
 
   return (
     <div className="min-h-screen bg-[#0b0b0c] text-white relative overflow-hidden">
@@ -59,34 +37,7 @@ export default function ManifestoPage() {
       </div>
 
       {/* Nav */}
-      <header className="sticky top-0 backdrop-blur-md bg-[#0b0b0c]/80 border-b border-zinc-900 z-40">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2 sm:gap-3 hover:opacity-80 transition-opacity">
-            <ArrowLeft className="h-4 w-4 sm:h-5 sm:w-5 text-zinc-400" />
-            <div className="flex items-center gap-2 sm:gap-3">
-              <Flame className="h-5 w-5 sm:h-6 sm:w-6 text-amber-400" />
-              <span className="font-semibold tracking-tight text-sm sm:text-base">FORGE</span>
-            </div>
-          </Link>
-
-          {/* Section Navigation */}
-          <nav className="hidden md:flex items-center gap-6">
-            {sections.map((section) => (
-              <button
-                key={section.id}
-                onClick={() => handleSectionClick(section.id)}
-                className={`text-sm font-medium transition-colors ${
-                  activeSection === section.id 
-                    ? 'text-amber-400' 
-                    : 'text-zinc-400 hover:text-zinc-200'
-                }`}
-              >
-                {section.title}
-              </button>
-            ))}
-          </nav>
-        </div>
-      </header>
+      <Header />
 
       {/* Hero Section */}
       <section className="relative z-10 min-h-[50vh] sm:min-h-[60vh] flex flex-col items-center justify-center px-4 sm:px-6 text-center">

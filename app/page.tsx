@@ -2,10 +2,11 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Flame, Users, Heart, Target } from "lucide-react";
+import { Users, Heart, Target } from "lucide-react";
 import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
 import { EmailSignup } from "@/components/EmailSignup";
+import { Header } from "@/components/Header";
 
 export default function LandingPage() {
   return (
@@ -14,17 +15,7 @@ export default function LandingPage() {
       <BackgroundForge />
 
       {/* Nav */}
-      <header className="relative z-10">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 py-4 sm:py-6 md:py-8 flex items-center justify-between">
-          <div className="flex items-center gap-2 sm:gap-3">
-            <Flame className="h-6 w-6 sm:h-7 sm:w-7 text-amber-400" />
-            <span className="font-bold tracking-tight text-base sm:text-lg">FORGE</span>
-          </div>
-          <div className="bg-gradient-to-r from-amber-500/20 to-red-500/20 border border-amber-500/30 rounded-full px-3 py-1.5 sm:px-4 sm:py-2 backdrop-blur-sm">
-            <span className="text-amber-400 text-xs sm:text-sm font-semibold">BETA</span>
-          </div>
-        </div>
-      </header>
+      <Header />
 
       {/* Hero */}
       <section className="relative z-10">
@@ -35,7 +26,7 @@ export default function LandingPage() {
             transition={{ duration: 0.7 }}
             className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.1]"
           >
-            Forge Brotherhood
+            Forge a Brotherhood
           </motion.h1>
 
           <motion.p
